@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+*.pptx
+*.pdf
+*.xlsx
+*.xls
+*.csv
+*.jpg
+*.jpeg
+*.png
+.env
