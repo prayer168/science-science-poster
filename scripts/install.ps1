@@ -41,7 +41,13 @@ if (-not $SkipSkillCopy) {
         New-Item -ItemType Directory -Force -Path $skillTarget, (Join-Path $skillTarget 'agents'), (Join-Path $skillTarget 'references') | Out-Null
         Copy-Item -LiteralPath (Join-Path $skillSource 'SKILL.md') -Destination $skillTarget -Force
         Copy-Item -LiteralPath (Join-Path $skillSource 'agents\openai.yaml') -Destination (Join-Path $skillTarget 'agents') -Force
-        Copy-Item -LiteralPath (Join-Path $skillSource 'references\CHANGELOG.md') -Destination (Join-Path $skillTarget 'references') -Force
+        $sourceReferences = Join-Path $skillSource 'references'
+        Get-ChildItem -LiteralPath $sourceReferences -File -Recurse | ForEach-Object {
+            $relativePath = $_.FullName.Substring($sourceReferences.Length + 1)
+            $destination = Join-Path (Join-Path $skillTarget 'references') $relativePath
+            New-Item -ItemType Directory -Force -Path (Split-Path -Parent $destination) | Out-Null
+            Copy-Item -LiteralPath $_.FullName -Destination $destination -Force
+        }
     }
 }
 

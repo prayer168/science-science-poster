@@ -1,4 +1,4 @@
 interface:
   display_name: "Science Fair Poster"
   short_description: "Design editable, research-based science fair posters"
-  default_prompt: "Use $science-fair-poster to analyze my science fair materials and produce polished, editable posters with dated photo captions, visualized results, discussion, conclusions, references, and future research."
+  default_prompt: "Use $science-fair-poster to start with my source folder and poster specs, help me select a layout for each panel from the template gallery, then analyze my science fair materials and produce editable posters."

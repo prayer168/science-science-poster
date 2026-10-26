@@ -2,7 +2,7 @@
 name: science-fair-poster
 description: Build or revise polished science fair posters from reports, datasets, photos, and event layout specifications. Use for research-story structure, editable poster decks, visualized results, dated photo tables, and print-ready exports.
 metadata:
-  version: 1.1.0
+  version: 1.2.0
 ---
 
 # Science Fair Poster
@@ -11,7 +11,7 @@ Turn the supplied science fair materials into a coherent, visually strong poster
 
 ## Workflow
 
-1. **Confirm inputs and output spec.** Identify the project source folder, required board count/orientation/dimensions, output location, and requested deliverables. Use reasonable defaults from the current conversation when available. If a required spec is missing, inspect supplied event documents before asking.
+1. **Run the start-of-project setup before poster production.** Ask for or confirm the folder path holding the science-fair materials, the four board dimensions/orientations, language, and visual preferences. Show `references/template-gallery.html` and have the user choose a layout for each of the three main boards and banner, plus a palette. They can return the gallery's JSON configuration or simply tell you the template IDs. If they want recommendations, use the catalog and project topic to suggest choices. Do not begin building poster decks until the source path and four-board format/style choices are set or the user explicitly delegates those choices.
 2. **Inventory and read the sources.** Find the report, raw data, existing charts, activity photos, captions/credits, citations, and any reference posters. Extract report sections and inspect relevant workbook sheets. Make a source inventory and record uncertainties before laying out content.
 3. **Build the research narrative.** Organize boards as a continuous story, adapting the sequence to the actual project. A common three-board sequence is motivation/questions/objectives; design/methods/timeline; results/discussion/conclusions/limitations/future research/references. Treat a banner as a separate title visual. Do not force this structure when the event or content suggests a better one.
 4. **Validate claims and numbers.** Calculate charts from the source data when possible; otherwise transcribe reported values and label them as report values. Check denominators, units, sample sizes, dates, and whether comparisons support causal or significance claims. Preserve and surface unresolved data conflicts; do not fabricate missing values, attributions, or citations.
@@ -23,7 +23,7 @@ Turn the supplied science fair materials into a coherent, visually strong poster
 
 Treat the project topic, source paths, dimensions, board count, language, colors, photo-credit wording, and output location as per-run inputs, not fixed facts. Reuse prior values only when the user says to continue the same project or they are clearly present in the active context.
 
-Skill release version is `1.1.0`. Update `metadata.version` and `references/CHANGELOG.md` when the skill itself changes materially; do not bump it merely because a poster project gets a new timestamped output folder. Preserve prior finished project folders when making later poster editions.
+Skill release version is `1.2.0`. Update `metadata.version` and `references/CHANGELOG.md` when the skill itself changes materially; do not bump it merely because a poster project gets a new timestamped output folder. Preserve prior finished project folders when making later poster editions.
 
 ## Software setup
 
@@ -38,4 +38,5 @@ Default to editable PowerPoint (`.pptx`) when the user requests slides/posters a
 ## Relevant references
 
 - Read [references/CHANGELOG.md](references/CHANGELOG.md) when updating the skill version.
+- Read [references/style-analysis.md](references/style-analysis.md) and use [references/template-gallery.html](references/template-gallery.html) plus [references/templates.json](references/templates.json) during the initial format/style selection. The gallery is a local static page; it cannot inspect project files or start poster production.
 

@@ -14,6 +14,8 @@ cd science-science-poster
 
 The script copies the skill to `%USERPROFILE%\.codex\skills\science-fair-poster` and the poster projects to `%USERPROFILE%\.codex\poster-tools`. Restart Codex after installation, then invoke it with `$science-fair-poster`.
 
+When starting a new poster project, open the installed `references/template-gallery.html` (or [open the gallery in this repository](references/template-gallery.html)). It includes 24 schematic layout templates and 8 palettes. Enter the source folder and board sizes, then choose a layout for each of the three boards and the banner. The page generates a JSON brief to paste into Codex. It does not access the folder, upload data, or create posters. The JSON contains the path you entered; keep it private if the path reveals personal or school information.
+
 Options:
 
 - `./scripts/install.ps1 -WhatIf` previews planned changes.
@@ -44,7 +46,7 @@ Upstream projects: [Doory](https://github.com/shaongitbd/doory), [GhostPoster](h
 
 ## Version
 
-Current skill version: **1.1.0**. See [CHANGELOG](references/CHANGELOG.md).
+Current skill version: **1.2.0**. See [CHANGELOG](references/CHANGELOG.md).
 
 ## License
 

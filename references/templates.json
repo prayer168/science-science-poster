@@ -1,0 +1,51 @@
+{
+  "catalog_version": "1.0.0",
+  "analysis_basis": {
+    "domestic_reference_images": 56,
+    "domestic_reference_pdfs": 15,
+    "international_reference_pdfs": 120,
+    "domestic_winning_project_pdfs": 1732,
+    "observations": [
+      "Compared title hierarchy, reading direction, evidence density, photo use, chart prominence, section geometry, color systems, and continuity across panels.",
+      "Domestic winning-work examples contribute clear methods/results ordering, dense scientific diagrams, tables, and colorful project evidence.",
+      "International research posters contribute modular card systems, image-led field narratives, data dashboards, map-led layouts, editorial asymmetry, and strong high-contrast title bands.",
+      "The previews are original schematic wireframes, not copies of source poster artwork."
+    ]
+  },
+  "palettes": [
+    {"id":"moss","name":"苔綠奶油白","description":"自然研究與生態主題；深綠標題配暖白底，圖表用金色點題。","colors":["#164D3A","#E4B84B","#F5F1E7"]},
+    {"id":"ocean","name":"海藍學術白","description":"清爽、可信、適合水域、環境與量測研究。","colors":["#075B78","#37A6B2","#F4F8F8"]},
+    {"id":"amber","name":"琥珀炭黑","description":"以深炭底與琥珀色重點形成鮮明對比，適合展場遠距辨讀。","colors":["#20242B","#F0A92F","#F7F4EC"]},
+    {"id":"night","name":"靛藍夜幕","description":"深色大標、亮色數據，適合主題鮮明或夜間觀察題材。","colors":["#17244B","#59D2D5","#F7F8FC"]},
+    {"id":"coral","name":"珊瑚暖灰","description":"溫暖、親和，適合行為觀察、教育介入與比較研究。","colors":["#9D443B","#E88668","#F6F0EB"]},
+    {"id":"forest","name":"森林分層綠","description":"以不同明度的綠呈現環境層次，適合生態與棲地研究。","colors":["#28563F","#8BAF77","#F3F6EA"]},
+    {"id":"mono","name":"黑白論文風","description":"克制的黑、白與灰，讓方法圖、公式與結果圖成為視覺焦點。","colors":["#202020","#888888","#FFFFFF"]},
+    {"id":"violet","name":"紫羅蘭霧灰","description":"紫藍標題配霧灰背景，適合資訊科技、材料與跨域專題。","colors":["#493A79","#A688CF","#F4F1F8"]}
+  ],
+  "templates": [
+    {"id":"T01","name":"三段研究故事","category":"研究敘事","pattern":"three","description":"以動機、方法、發現三個大區塊帶讀者走完研究；每段配置代表圖或一項主證據。","best_for":"四板中的左、中、右板都可用；適合研究流程清楚的作品。","reference_pattern":"國內優勝作品常見的研究流程分段，結合國際海報的大標題區。"},
+    {"id":"T02","name":"左圖右論述","category":"圖像導向","pattern":"split","description":"左側約六成放主圖、實物或研究場域，右側放問題、方法與精簡數據。","best_for":"一張照片或一張核心圖能迅速說明研究的板面。","reference_pattern":"國際研究海報常見的圖像主導與欄位分區。"},
+    {"id":"T03","name":"Z 字導讀路徑","category":"研究敘事","pattern":"zigzag","description":"圖文區塊左右交錯，利用箭頭與色塊引導視線往下走，減少長欄閱讀感。","best_for":"步驟多、需要解說但不宜塞成密集文字的內容。","reference_pattern":"國內外流程型海報中的交錯式閱讀路徑。"},
+    {"id":"T04","name":"中央問題放射圖","category":"概念圖像","pattern":"radial","description":"中央放研究問題或核心物件，四周連接變因、場域、觀察值與應用。","best_for":"多因子交互作用、系統關係或跨領域架構。","reference_pattern":"國際海報中的中心概念圖、網絡與環狀資訊圖。"},
+    {"id":"T05","name":"實驗時間軸","category":"研究敘事","pattern":"timeline","description":"用一條醒目的時間線串起設計、製作、觀察、分析與結論，照片附日期和圖說。","best_for":"需要呈現長期追蹤、季節變化或學生製作過程。","reference_pattern":"研究海報時間線與科展活動照片紀錄。"},
+    {"id":"T06","name":"因素矩陣與結果格","category":"數據呈現","pattern":"matrix","description":"列出自變因與組別，再以格狀圖表或色階顯示各組結果，便於橫向比較。","best_for":"多處理組、多場域或多條件的實驗。","reference_pattern":"國內科展作品常用的實驗組別表、國際海報的矩陣圖。"},
+    {"id":"T07","name":"數據儀表板","category":"數據呈現","pattern":"dashboard","description":"頂部先顯示三至五個關鍵數值，下方排列小型圖表與簡短解讀。","best_for":"結果多、觀眾需要快速抓到重點的研究。","reference_pattern":"國際環境與監測海報的 KPI 卡片和多圖表面板。"},
+    {"id":"T08","name":"田野照片誌","category":"照片紀錄","pattern":"field","description":"照片作主角，按時間或地點排列；每張小圖配日期、圖說、拍攝者和一項觀察。","best_for":"野外觀察、工程製作、實地採樣與活動歷程。","reference_pattern":"國內科展過程紀錄和國際生態海報中的現場影像列。"},
+    {"id":"T09","name":"前後變化對照","category":"比較分析","pattern":"beforeafter","description":"左右或上下對照基線與結果，差異以箭頭、同尺度圖表或照片標示。","best_for":"介入前後、處理前後、季節或版本變化。","reference_pattern":"國際海報的前後對照與雙情境評估。"},
+    {"id":"T10","name":"地圖主導空間研究","category":"空間分析","pattern":"map","description":"中央或左側放大地圖，周邊用編號標註樣點、分布圖例與統計摘要。","best_for":"樣區、路線、棲地分布或地理差異研究。","reference_pattern":"國際地理、生態與環境海報的地圖主視覺。"},
+    {"id":"T11","name":"證據照片牆","category":"照片紀錄","pattern":"photowall","description":"將照片整理成整齊網格，透過短標籤、尺度尺與局部放大呈現可觀察證據。","best_for":"物種辨識、材料比較、顯微影像或多階段製作紀錄。","reference_pattern":"國內作品的實物/觀察照片拼版與國際海報影像矩陣。"},
+    {"id":"T12","name":"方法流程圖板","category":"方法設計","pattern":"flow","description":"將研究步驟畫成清楚的節點和箭頭，旁邊放對應器材、測量值或照片。","best_for":"程序是作品亮點、流程較長或需讓觀眾重現方法。","reference_pattern":"國內科展研究架構圖和國際方法流程海報。"},
+    {"id":"T13","name":"單一關鍵數據","category":"數據呈現","pattern":"heroNumber","description":"以一個大數字或主要結果作視覺錨點，其餘內容用小圖表補足證據和限制。","best_for":"有清楚主要發現，但仍需交代證據來源的板面。","reference_pattern":"國際海報中先展示主要發現的結果焦點設計。"},
+    {"id":"T14","name":"期刊論文極簡欄","category":"學術經典","pattern":"minimal","description":"白底、細線、穩定欄距與精簡色彩，標題、方法、結果、結論按論文順序排列。","best_for":"資料密度高、需要正式學術感或評審快速查閱。","reference_pattern":"國際學術會議的傳統多欄論文海報。"},
+    {"id":"T15","name":"不對稱編輯網格","category":"版面構成","pattern":"editorial","description":"一個大型主圖配多個大小不一的圖文區，保留明確對齊線但避免平均切格。","best_for":"想有雜誌感、主圖明確且內容量不平均的研究。","reference_pattern":"國際海報的編輯式不對稱網格與圖片敘事。"},
+    {"id":"T16","name":"深色展場高對比","category":"視覺風格","pattern":"dark","description":"深色底搭配亮色標題、簡化文字和高亮圖表，適合遠距觀看的展場。","best_for":"大型展板、夜間觀測或需在繁忙展區中突出主題。","reference_pattern":"國際海報中的深色大標與高對比資訊層級。"},
+    {"id":"T17","name":"自然博物誌","category":"視覺風格","pattern":"naturalist","description":"以自然色、標本式標籤、細線註記和觀察插圖營造田野筆記感。","best_for":"生物、地科、植物、昆蟲與長期觀察主題。","reference_pattern":"生態與保育海報中的田野照片、地圖和自然色系。"},
+    {"id":"T18","name":"技術表格藍圖","category":"方法設計","pattern":"blueprint","description":"用規格表、尺寸圖、實驗條件表與技術示意圖表達設計細節。","best_for":"工程、機構、材料、程式系統或裝置改良。","reference_pattern":"國內工程科展的結構圖、規格表與國際技術海報。"},
+    {"id":"T19","name":"問題—方法—答案","category":"研究敘事","pattern":"threeAct","description":"三個大型並列章節各回答一個問題，最後以醒目結論收束。","best_for":"觀眾停留時間短、希望一眼讀懂研究價值的作品。","reference_pattern":"國內摘要式展板與國際三區塊故事線。"},
+    {"id":"T20","name":"成果卡片拼貼","category":"版面構成","pattern":"cards","description":"以不同大小的卡片承載圖表、照片、引用發現與限制，像資訊拼貼但仍有網格。","best_for":"混合多種證據型態且需要彈性排版。","reference_pattern":"國際模組化卡片海報與國內多種圖表拼版。"},
+    {"id":"T21","name":"垂直長卷資訊圖","category":"資訊圖解","pattern":"vertical","description":"沿垂直主線由上至下串連問題、步驟、關鍵數字與應用，適合狹長版面。","best_for":"直式窄板、單一連續流程或展覽走道閱讀。","reference_pattern":"國際直式流程資訊圖與狹長主題海報。"},
+    {"id":"T22","name":"雙欄圖文平衡","category":"版面構成","pattern":"twocol","description":"兩欄各自有圖與短文，可依研究問題分成兩個平行主題。","best_for":"兩個實驗、兩種材料或兩組結果並列。","reference_pattern":"國內科展常見雙欄研究板與國際平行欄版面。"},
+    {"id":"T23","name":"統計圖群主導","category":"數據呈現","pattern":"chartwall","description":"多張同尺寸小圖表形成主視覺，搭配共享圖例、統一尺度和一段總結。","best_for":"多個可比較結果，且統計圖比裝飾插圖更重要。","reference_pattern":"國際監測、環境評估與實驗結果海報中的圖表群。"},
+    {"id":"T24","name":"三板全景連續敘事","category":"多板連續","pattern":"triptych","description":"左、中、右板使用連續色帶、編號和跨板箭頭；三板分開完整、連起來仍形成一條故事線。","best_for":"使用者指定三張主板加一張橫幅的科展展示。","reference_pattern":"從國內科展三板展場構圖，結合國際多面板研究故事線歸納。"}
+  ]
+}

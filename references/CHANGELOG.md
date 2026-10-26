@@ -1,5 +1,12 @@
 # Change log
 
+## 1.2.0 — 2026-10-26
+
+- Added an up-front project intake: source folder, board specifications, and one selected layout for each of three panels and the banner.
+- Added an analyzed catalog of 24 original schematic templates and 8 independent color palettes based on the user-curated domestic and international poster references.
+- Added a standalone interactive gallery that previews wireframe layouts and exports a JSON brief before production begins.
+- Updated the installer to copy the complete public references into the local skill.
+
 ## 1.1.0 — 2026-10-26
 
 - Added a Windows setup script that installs the core desktop tools and copies the skill locally.
