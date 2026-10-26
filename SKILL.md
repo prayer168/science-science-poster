@@ -2,7 +2,7 @@
 name: science-fair-poster
 description: Build or revise polished science fair posters from reports, datasets, photos, and event layout specifications. Use for research-story structure, editable poster decks, visualized results, dated photo tables, and print-ready exports.
 metadata:
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Science Fair Poster
@@ -23,7 +23,13 @@ Turn the supplied science fair materials into a coherent, visually strong poster
 
 Treat the project topic, source paths, dimensions, board count, language, colors, photo-credit wording, and output location as per-run inputs, not fixed facts. Reuse prior values only when the user says to continue the same project or they are clearly present in the active context.
 
-Skill release version is `1.0.0` for this initial edition. Update `metadata.version` and `references/CHANGELOG.md` when the skill itself changes materially; do not bump it merely because a poster project gets a new timestamped output folder. Preserve prior finished project folders when making later poster editions.
+Skill release version is `1.1.0`. Update `metadata.version` and `references/CHANGELOG.md` when the skill itself changes materially; do not bump it merely because a poster project gets a new timestamped output folder. Preserve prior finished project folders when making later poster editions.
+
+## Software setup
+
+On Windows 10/11, install the skill and its supported poster toolchain from a cloned/downloaded repository by running `./scripts/install.ps1` in PowerShell. The installer uses winget to install Git, Python 3.12, Go, Inkscape, Scribus, and jamovi; clones the Doory, GhostPoster, and Tile projects into `%USERPROFILE%\.codex\poster-tools`; prepares an isolated Python environment for GhostPoster; and builds Tile. Existing project folders are kept as-is. Tile's upstream repository is archived, so treat it as optional legacy software. See the repository README for options and limitations.
+
+Doory is cloned but not launched: self-hosting needs Docker, generated secrets, and explicit service startup. Respect its upstream license and required in-app attribution. Image generation uses Codex's built-in image tool when available; that capability is not a desktop package this installer can bundle. Use equivalent official installers and upstream project instructions on macOS/Linux; the included automation is Windows-specific.
 
 ## Deliverables and editability
 
